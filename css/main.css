@@ -22,6 +22,13 @@ html {
 	text-align: center;
 }
 
+.masthead .primary {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
 .primary a{
 	display: block;
 	padding: 1em;
@@ -47,3 +54,28 @@ html {
 }
 
 
+.hold{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	background: blue; 
+}
+
+@media (min-width: 600px) {
+.primary {
+	float: left;
+	width: 65%;
+}
+
+}
+
+.primary__header {}
+.primary__heading {}
+
+
+@media (min-width: 600px) {
+	.secondary {
+		overflow: hidden;
+		background: yellow;
+	}
+}
